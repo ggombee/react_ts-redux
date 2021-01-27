@@ -1,4 +1,4 @@
-# Base : Getting Started with Create React App with TypeScript (클론)
+# Base : Getting Started with Create React App with TypeScript
 
 ## 1. 환경설정
 
