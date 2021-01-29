@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import chatimg from "../../../styles/images/chatting.png";
-import mypageicon from "../../../styles/images/mypageicon.png";
-import search from "../../../styles/images/search.png";
+import React from 'react';
+import { Link } from 'react-router-dom';
+// import chatimg from '../../../styles/images/chatting.png';
+// import mypageicon from '../../../styles/images/mypageicon.png';
+// import search from '../../../styles/images/search.png';
 
 // const _mainSlides = [
 //   {
@@ -19,7 +19,7 @@ import search from "../../../styles/images/search.png";
 //   },
 // ];
 
-function Header() {
+function Header(): React.ReactElement {
   return (
     <>
       <header>
@@ -27,17 +27,11 @@ function Header() {
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-          <span>
-            <img src={search}></img>
-          </span>
+          <span>{/* <img src={search}></img> */}</span>
           &nbsp; &nbsp;
-          <span>
-            <img src={mypageicon}></img>
-          </span>
+          <span>{/* <img src={mypageicon}></img> */}</span>
           &nbsp; &nbsp;
-          <span>
-            <img src={chatimg}></img>
-          </span>
+          <span>{/* <img src={chatimg}></img> */}</span>
         </div>
         {/* <Link to="/">
             <button>Home</button>

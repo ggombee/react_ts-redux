@@ -1,11 +1,10 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import * as React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 // import { composeWithDevTools } from "redux-devtools-extension";
-import { Provider } from "react-redux";
 // import { createStore, applyMiddleware } from "redux";
 // import logger from "redux-logger";
 
-import { BasePages } from "./BasePages";
+import { BasePages } from './BasePages';
 // import AuthPage from "./pages/AuthPage";
 // import store from "../stores/configureStore";
 
@@ -15,15 +14,15 @@ import { BasePages } from "./BasePages";
 //   composeWithDevTools(applyMiddleware(logger))
 // );
 
-function App({ store }) {
+function App(): React.ReactElement {
   return (
     <>
-      <Provider store={store}>
-        <BrowserRouter>
-          <BasePages />
-          {/* <AuthPage /> */}
-        </BrowserRouter>
-      </Provider>
+      {/* <Provider store={store}> */}
+      <BrowserRouter>
+        <BasePages />
+        {/* <AuthPage /> */}
+      </BrowserRouter>
+      {/* </Provider> */}
     </>
   );
 }

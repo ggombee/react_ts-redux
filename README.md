@@ -1,5 +1,7 @@
 # Base : Getting Started with Create React App with TypeScript
 
+-- 타입스크립트 적용
+
 ## 1. 환경설정
 
 1. 프로젝트 root에서 yarn install

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-function AuthContainer() {
+function AuthContainer(): React.ReactElement {
   return <>로그인페이지입니다.</>;
 }
 

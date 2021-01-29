@@ -1,8 +1,8 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 // import { connectRouter } from "connected-react-router";
 
 // import todoList from "./board/actions";
-import mainReducer from "./main/reducer";
+import mainReducer from './main/reducer';
 
 const rootReducer = combineReducers({
   // todoList,
@@ -11,3 +11,5 @@ const rootReducer = combineReducers({
 });
 
 export default rootReducer;
+
+export type RootState = ReturnType<typeof rootReducer>;

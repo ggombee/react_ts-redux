@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 // import MainImageBanner from "../../components/MainImageBanner";
 
-function PurchaseContainer() {
+function PurchaseContainer(): React.ReactElement {
   // const history = useHistory();
   // const { tabIndex, setTabIndex } = useState("1");
 
