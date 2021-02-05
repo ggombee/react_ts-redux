@@ -1,31 +1,22 @@
-import ActionsTypes from './constants';
+import { MainState, MainActions } from './types';
+import ActionTypes from './constants';
 
-import { MainState, MainImageActions } from './types';
-
-export const initialState = {
-  imageList: [],
+export const initialState: MainState = {
+  MainbannerList: [],
+  MainCategoryList: [],
 };
 
-// function mainReducer(state = initialState, action) {
-//   switch (action.type) {
-//     case types.GET_IMAGE_LIST:
-//       return {
-//         ...state,
-//         imageItem: action.payload.imageItem,
-//       };
-//     default:
-//       return state;
-//   }
-// }
-
-function mainReducer(
-  state: MainState = initialState,
-  action: MainImageActions,
-): MainState {
+function mainReducer(state: MainState = initialState, action: MainActions) {
   switch (action.type) {
-    case ActionsTypes.GET_IMAGE_LIST:
+    case ActionTypes.GET_MAINBANNER_LIST:
       return {
-        imageList: action.payload.imageList || [],
+        ...state,
+        MainbannerList: action.payload.MainbannerList,
+      };
+    case ActionTypes.GET_MAINCATEGORY_LIST:
+      return {
+        ...state,
+        MainCategoryList: action.payload.MainCategoryList,
       };
     default:
       return state;

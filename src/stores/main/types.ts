@@ -1,13 +1,21 @@
-import { ActionType } from "typesafe-actions";
-import * as actions from "./actions";
+import { ActionType } from 'typesafe-actions';
+import * as actions from './actions';
 
-export interface MainImage {
+export interface Mainbanner {
   id: number;
-  image: string;
+  imgUrl: string;
+}
+
+export interface MainCategory {
+  id: number;
+  menuName: string;
+  // component: <MyStory />,
+  isActive: boolean;
 }
 
 export interface MainState {
-    imageList:MainImage[];
+  MainbannerList: Mainbanner[];
+  MainCategoryList: MainCategory[];
 }
 
-export type  MainImageActions = ActionType<typeof actions>;
+export type MainActions = ActionType<typeof actions>;
