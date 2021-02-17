@@ -14,7 +14,6 @@ function MainPage() {
       <Header />
       <MainContainer />
       <Switch>
-        {/* <Redirect exact={true} path={URLs.PURCHASE} component={PurchasePage} /> */}
         <Route exact path={URLs.PURCHASE} component={PurchasePage} />
         <Route path={URLs.SELL} component={SellPage} />
       </Switch>
