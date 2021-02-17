@@ -1,5 +1,6 @@
 enum ActionTypes {
-  GET_IMAGE_LIST = 'main/GET_IMAGE_LIST',
+  GET_MAINBANNER_LIST = 'main/GET_MAINBANNER_LIST',
+  GET_MAINCATEGORY_LIST = 'main/GET_MAINCATEGORY_LIST',
 }
 
 export default ActionTypes;

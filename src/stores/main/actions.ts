@@ -1,16 +1,25 @@
-// import * as types from "./constants";
-
 import ActionTypes from './constants';
-import { MainImage } from './types';
+import { action } from 'typesafe-actions';
+import { Mainbanner, MainCategory } from './types';
 
-interface MainImageActions {
-  type: ActionTypes;
-  payload: {
-    imageList?: MainImage[];
-  };
-}
+type MainAction =
+  | {
+      type: ActionTypes.GET_MAINBANNER_LIST;
+      payload: {
+        MainbannerList: Mainbanner[];
+      };
+    }
+  | {
+      type: ActionTypes.GET_MAINCATEGORY_LIST;
+      payload: {
+        MainCategoryList: MainCategory[];
+      };
+    };
 
-export const getImageList = (imageList: MainImage[]): MainImageActions => ({
-  type: ActionTypes.GET_IMAGE_LIST,
-  payload: { imageList },
-});
+export const selectMainbanner = (MainbannerList: Mainbanner[]): MainAction =>
+  action(ActionTypes.GET_MAINBANNER_LIST, { MainbannerList });
+
+export const selectMainCategory = (
+  MainCategoryList: MainCategory[],
+): MainAction =>
+  action(ActionTypes.GET_MAINCATEGORY_LIST, { MainCategoryList });
